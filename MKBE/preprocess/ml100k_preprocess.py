@@ -9,20 +9,20 @@ subset = "movie_title_poster_user_rating"
 #subset = "movie_title_user_rating"
 
 in_files = {
-    "user-train": "../code/movielens/ml-100k/u.user",
-    "movie-train": "../code/movielens/ml-100k/u.item",
-    "rating-train": "../code/movielens/ml-100k/u{:}.base".format(fold),
-    "rating-test": "../code/movielens/ml-100k/u{:}.test".format(fold),
-    "cached-posters": "../code/movielens/ml-100k/feature_maps.npy"
+    "user-train": ".../datasets/Movielens-100k plus/Movielens-100k/u.user",
+    "movie-train": ".../datasets/Movielens-100k plus/Movielens-100k/u.item",
+    "rating-train": ".../datasets/Movielens-100k plus/Movielens-100k/u{:}.base".format(fold),
+    "rating-test": ".../datasets/Movielens-100k plus/Movielens-100k/u{:}.test".format(fold),
+    "cached-posters": ".../datasets/Movielens-100k plus/Movielens-100k/feature_maps.npy"
 }
 
 out_files = {
-    "scale": "../assets/ml100k-processed/u{:}-{:}-scale.npy".format(fold, subset),
-    "train": "../assets/ml100k-processed/u{:}-{:}-train.npy".format(fold, subset),
-    "test": "../assets/ml100k-processed/u{:}-{:}-test.npy".format(fold, subset),
-    "idencoders": "../assets/ml100k-processed/u{:}-{:}-idencoder.npy".format(fold, subset),
-    "titles": "../assets/ml100k-processed/u{:}-{:}-titles.npy".format(fold, subset),
-    "title_dict": "../assets/ml100k-processed/u{:}-{:}-title-dict.npy".format(fold, subset)
+    "scale": ".../datasets/Movielens-100k plus/Movielens-100k/u{:}-{:}-scale.npy".format(fold, subset),
+    "train": ".../datasets/Movielens-100k plus/Movielens-100k/u{:}-{:}-train.npy".format(fold, subset),
+    "test": ".../datasets/Movielens-100k plus/Movielens-100k/u{:}-{:}-test.npy".format(fold, subset),
+    "idencoders": ".../datasets/Movielens-100k plus/Movielens-100k/u{:}-{:}-idencoder.npy".format(fold, subset),
+    "titles": ".../datasets/Movielens-100k plus/Movielens-100k/u{:}-{:}-titles.npy".format(fold, subset),
+    "title_dict": ".../datasets/Movielens-100k plus/Movielens-100k/u{:}-{:}-title-dict.npy".format(fold, subset)
 }
 
 user_headers = ["userid", "age", "gender", "occupation", "zip"]
